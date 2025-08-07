@@ -1,4 +1,4 @@
-module github.com/DaniyarGilimov/card_game_model
+module github.com/daniyargilimov/card_game_model
 
 go 1.23.5
 
