@@ -202,8 +202,10 @@ type ExportAllRoomsBotData struct {
 
 // ExportData for general purpose
 type ExportData struct {
-	Status string      `json:"status"`
-	Data   interface{} `json:"data"`
+	Status          string `json:"status"`
+	InstructionType string `json:"instructionType"`
+
+	Data interface{} `json:"data"`
 }
 
 // CardDistributionInstruction used to send distribution
