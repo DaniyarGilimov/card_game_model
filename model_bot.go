@@ -5,3 +5,5 @@ type BotAI interface {
 	ReceiveGameUpdate(message []byte, withSleep bool)
 	Shutdown()
 }
+
+type BotFactory func() BotAI
