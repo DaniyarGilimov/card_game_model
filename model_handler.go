@@ -2,9 +2,6 @@ package gamemodel
 
 import (
 	"context"
-	"errors"
-	"net/http"
-	"net/url"
 
 	model "github.com/daniyargilimov/card_api_model"
 )
@@ -44,32 +41,6 @@ type RoomInfo struct {
 	// TrumpSuit    string
 
 	ID int
-}
-
-type RequestJoinRoom struct {
-	JoinType        string // reconnect, join, create
-	TournamentID    int
-	PlayerToken     string
-	RoomID          int
-	PlayerHandChips int64 // chips to join
-	RoomInfo        *RoomInfo
-}
-
-type RequestGeneral struct {
-	PlayerToken string
-}
-
-func (resp *RequestGeneral) ParseRequest(r *http.Request) error {
-
-	params, _ := url.ParseQuery(r.URL.RawQuery)
-
-	if len(params["token"]) > 0 {
-		resp.PlayerToken = params["token"][0]
-
-		return nil
-	}
-
-	return errors.New("not found there")
 }
 
 type UserIdAndByte struct {
