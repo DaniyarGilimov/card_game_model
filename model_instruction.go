@@ -190,10 +190,6 @@ type ExportAllRoomsData struct {
 	Wallpaper     string   `json:"wallpaper"`
 	PlayersImage  []string `json:"playersImage"`
 	IsPrivate     bool     `json:"isPrivate"`
-
-	// Duplicating for fivecard
-	MinBet       int64 `json:"minBet"`
-	PlayersCount int   `json:"playersCount"`
 }
 
 // ExportAllRoomsBotData for exporting all rooms
