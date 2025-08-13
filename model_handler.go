@@ -38,7 +38,7 @@ type RoomInfo struct {
 	Password     string //`json: "password"`
 	DefinedCards bool   // Defines if a room distributes predefined cards
 
-	// TrumpSuit    string
+	TournamentID int // TournamentID is used to identify the tournament this room belongs to
 
 	ID int
 }
