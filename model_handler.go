@@ -17,7 +17,7 @@ type GameFactory func(
 
 type Service interface {
 	GetMessages() ([]*model.SingleMessage, error)
-	IncrementChips(id int, chips int64) (int64, error)
+	IncrementChips(id int, chips int64, tournamentId int) (int64, error)
 }
 
 type Game interface {
