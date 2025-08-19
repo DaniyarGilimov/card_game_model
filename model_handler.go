@@ -30,10 +30,9 @@ type Game interface {
 }
 
 type Telegram interface {
-	Create(chatId int64) error     //
-	Delete(chatId int64) error     //
-	BroadcastLSOF() error          //
-	BroadcastSocketStartup() error //
+	Create(chatId int64) error //
+	Delete(chatId int64) error //
+	BroadcastLSOF() error      //
 
 	BroadcastMessage(message string) error          //
 	SendMessage(chatId int64, message string) error //
