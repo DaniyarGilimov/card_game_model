@@ -2,7 +2,7 @@ module github.com/daniyargilimov/card_game_model
 
 go 1.23.5
 
-require github.com/daniyargilimov/card_api_model v0.0.0-20250807130408-c9a60ee50cd7
+require github.com/daniyargilimov/card_api_model v0.0.0-20251127100336-dbed652004e9
 
 require (
 	github.com/bytedance/sonic v1.11.6 // indirect
