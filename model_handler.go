@@ -19,6 +19,8 @@ type Service interface {
 	GetMessages() ([]*model.SingleMessage, error)
 	GetMessagesWithID() ([]*model.SingleMessageWithLang, error)
 	IncrementChips(id int, chips int64, tournamentId int) (int64, error)
+
+	IncrementStatistic(fieldName string, inc int)
 }
 
 type Game interface {
