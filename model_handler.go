@@ -27,6 +27,7 @@ type Game interface {
 	SendRoomToGameInst(raw []byte, ctx context.Context) bool
 	SendRoomToGamePlayerJoin(player *Player, ctx context.Context) bool
 	SendRoomToGamePlayerLeave(player *Player, ctx context.Context) bool
+	GetStateInfo() string
 	RunGameListener()
 	GetPlayers() []*Player
 	IsFastForward() bool
