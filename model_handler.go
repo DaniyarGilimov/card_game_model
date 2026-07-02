@@ -21,6 +21,8 @@ type Service interface {
 	IncrementChips(id int, chips int64, tournamentId int) (int64, error)
 
 	IncrementStatistic(id int, fieldName string, inc int)
+
+	CreateOverflowLog(userID int, handChips int64, triedAmount int64)
 }
 
 type Game interface {
